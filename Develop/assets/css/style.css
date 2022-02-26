@@ -100,49 +100,15 @@ p {
   background-color: var(--quaternary-color);
 }
 
-.benefit-lead {
+/* ↓↓↓ Changed the HTML to consolidate classes and remove redundancy. ↓↓↓ */
+.benefit-box {
   margin-bottom: 32px;
   color: var(--secondary-color);
-}
-
-.benefit-brand {
-  margin-bottom: 32px;
-  color: var(--secondary-color);
-}
-
-.benefit-cost {
-  margin-bottom: 32px;
-  color: var(--secondary-color);
-}
-
-.benefit-lead h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-cost h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-lead img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-cost img {
+.benefits img {
   display: block;
   margin: 10px auto;
   max-width: 150px;

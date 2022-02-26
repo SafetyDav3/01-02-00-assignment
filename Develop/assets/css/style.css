@@ -1,5 +1,8 @@
 /* -Changed the header selection by class to by element in accordance with the HTML doc.
    -Replaced colors in document with ":root" directory variables.
+   -Created a :root.
+   -Added var()s. 
+   -Consolidated the code.
 */
 
 /* ↓↓↓ Created ":root" directory. ↓↓↓ */
@@ -11,6 +14,10 @@
   --quaternary-color: #2589bd;
   --quinary-color: #0072bb;
   /* Fonts */
+  --page-font-size: 19px;
+  --header-font-size: 48px;
+  --nav-font-size: 22px;
+  --content-font-size: 36px;
   --first-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   --second-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -34,27 +41,29 @@ header {
   color: var(--secondary-color);
 }
 
+/* ↓↓↓ Added a var() for font size. ↓↓↓ */
 header h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: var(--header-font-size);
 }
 
 #seo {
   color: var(--primary-color);
 }
 
+/* ↓↓↓ Added a var() for font size and increased it a bit for readability. ↓↓↓ */
 nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: var(--second-font-family);
-  font-size: 20px;
+  font-size: var(--nav-font-size);
 }
-/* Removed redundant selectors. */
+/* ↓↓↓ Removed redundant selectors. ↓↓↓ */
 nav ul {
   list-style-type: none;
 }
-/* Removed redundant selectors. */
+/* ↓↓↓ Removed redundant selectors. ↓↓↓ */
 nav li {
   display: inline-block;
   margin-left: 25px;
@@ -65,8 +74,9 @@ a {
   text-decoration: none;
 }
 
+/*  ↓↓↓ Changed the font size to make the page more readable. and created var() ↓↓↓ */
 p {
-  font-size: 16px;
+  font-size: var(--page-font-size);
 }
 
 .hero {
@@ -87,7 +97,7 @@ p {
   float: right;
   margin-left: 25px;
 }
-/* Was selected by class now selected by element. */
+/* ↓↓↓ Was selected by class now selected by element. ↓↓↓ */
 section {
   width: 75%;
   display: inline-block;
@@ -119,7 +129,7 @@ section {
   max-width: 150px;
 }
 
-.content-boxs {
+.content-boxes {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
@@ -128,13 +138,14 @@ section {
   color: var(--secondary-color);
 }
 
-.content-boxs img {
+.content-boxes img {
   max-height: 200px;
 }
 
-.content-boxs h2 {
+/* ↓↓↓ Added var() for font size. ↓↓↓ */
+.content-boxes h2 {
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: var(--content-font-size);
 }
 
 footer {

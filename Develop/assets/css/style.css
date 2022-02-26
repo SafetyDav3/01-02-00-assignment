@@ -4,11 +4,17 @@
 
 /* ↓↓↓ Created ":root" directory. ↓↓↓ */
 :root {
+  /* Colors */
   --primary-color: #d9dcd6;
   --secondary-color: #ffffff;
   --tertiary-color: #2a607c;
   --quaternary-color: #2589bd;
   --quinary-color: #0072bb;
+  /* Fonts */
+  --first-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --second-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 * {
@@ -23,8 +29,7 @@ body {
 
 header {
   padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--first-font-family);
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
 }
@@ -38,19 +43,19 @@ header h1 {
   color: var(--primary-color);
 }
 
-header div {
+nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--second-font-family);
   font-size: 20px;
 }
-
-header div ul {
+/* Removed redundant selectors. */
+nav ul {
   list-style-type: none;
 }
-
-header div ul li {
+/* Removed redundant selectors. */
+nav li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -82,8 +87,8 @@ p {
   float: right;
   margin-left: 25px;
 }
-
-.content {
+/* Was selected by class now selected by element. */
+section {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
@@ -96,7 +101,7 @@ p {
   float: right;
   width: 20%;
   height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--second-font-family);
   background-color: var(--quaternary-color);
 }
 
@@ -114,68 +119,31 @@ p {
   max-width: 150px;
 }
 
-.search-engine-optimization {
+.content-boxs {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--second-font-family);
   background-color: var(--quinary-color);
   color: var(--secondary-color);
 }
 
-.online-reputation-management {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: var(--quinary-color);
-  color: var(--secondary-color);
-}
-
-.social-media-marketing {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: var(--quinary-color);
-  color: var(--secondary-color);
-}
-
-.search-engine-optimization img {
+.content-boxs img {
   max-height: 200px;
 }
 
-.online-reputation-management img {
-  max-height: 200px;
-}
-
-.social-media-marketing img {
-  max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.content-boxs h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
-.online-reputation-management h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.social-media-marketing h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.footer {
+footer {
   padding: 30px;
   clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--first-font-family);
   text-align: center;
 }
 
-.footer h2 {
+footer h2 {
   font-size: 20px;
 }
